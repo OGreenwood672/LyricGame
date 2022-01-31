@@ -2,19 +2,24 @@ import "./lyrics.scss";
 import React, { useState, useEffect, useRef } from "react";
 
 function Lyrics({ socket }) {
-    const [lyrics, setLyrics] = useState([]);
+    let [lyrics, setLyrics] = useState([]);
 
     useEffect(() => {
 
-        console.log("Render1")
-
         socket.on("lyric", (data) => {
+
+            // console.log(lyrics);
 
             let temp = lyrics;
             temp.push({
                 text: data.text,
             });
             setLyrics([...temp]);
+        });
+
+        socket.on("reset", () => {
+            console.log("Resetting");
+            lyrics = [];
         });
 
     }, [socket]);

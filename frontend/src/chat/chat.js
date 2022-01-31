@@ -7,7 +7,6 @@ function Chat({ username, roomname, socket }) {
 
   useEffect(() => {
 
-    console.log("Render2")
     socket.on("message", (data) => {
 
       let temp = messages;
