@@ -9,13 +9,13 @@
     Open two separate terminals
   </li>
   <li>
-    In one terminal, enter the frontend ```cd frontend``` and run ```npm run start```
+    In one terminal, enter the frontend `cd frontend` and run `npm run start`
   </li>
   <li>
-    In the other terminal, enter the backend ```cd backend``` and run ```npm run start```
+    In the other terminal, enter the backend `cd backend` and run `npm run start`
   </li>
   <li>
-    In the other terminal, enter the backend ```cd backend``` and run ```npm run start```
+    In the other terminal, enter the backend `cd backend` and run `npm run start`
   </li>
 </ul>
 The website will now be avaliable on your local network on port 3000.
